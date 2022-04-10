@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>javascript, html5 tetris</title>
+	<link rel="stylesheet" href="tetris.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class="page-container">
+			<div class="content-wrap">
+					<div class="row1">
+							<div class="angular">A javascript html5 tetris game</div>
+					</div>
+					<div id="tetrisbod">
+								<div id="top">
+										<div id="topleft">
+											<div id="lines" class="lines1">LINES :   <span id="lines3"></span></div>
+											<div class="clear"></div>
+											<div id="speed1" class="speed1">SPEED:  <span id="speed3"></span>ms</div>
+											<div class="clear"></div>
+										</div>
+										<div id="topright">
+											<div id="gameover2"></div>
+											<div class="clear"></div>
+										</div>
+								</div>
+								<div class="clear"></div>
+				        <div id="tetris"><span id='tetriscontent'></span></div>
+				        <div id="right">
+				            <div id="lines" class="lines1">LINES :   <span id="lines2"></span></div>
+				            <div class="clear"></div>
+				            <div id="speed1" class="speed1">SPEED:  <span id="speed2"></span>ms</div>
+				            <div class="clear"></div>
+				            <div id="gameover"></div>
+				            <div class="clear"></div>
+				            <div id="prev"></div>
+				            <div class="clear"></div>
+				            <div class="clicks">
+				                <div class="click"></div>
+				                <div id="clickleft" class="click" onclick="clickrotate()"><img src="images/rotate.png" /></div>
+				                <div class="click"></div>
+				                <div class="clear"></div>
+
+				                <div id="clickright" class="click" onclick="clickleft()"><img src="images/left.png" /></div>
+				                <div class="click"></div>
+				                <div id="clickleft" class="click" onclick="clickright()"><img src="images/right.png" /></div>
+				                <div class="clear"></div>
+
+				                <div class="click"></div>
+				                <div id="clickleft" class="click" onclick="clickbottom()"><img src="images/bottom.png" /></div>
+				                <div class="click"></div>
+				                <div class="clear"></div>
+				            </div>
+				            <div class="clear"></div>
+				        </div>
+				        <div class="clear"></div>
+								<div id="clicksmobile">
+									<div id="prev2"></div>
+									<div class="clicks">
+											<div class="click"></div>
+											<div id="clickleft2" class="click" onclick="clickrotate()"><img src="images/rotate.png" /></div>
+											<div class="click"></div>
+											<div class="clear"></div>
+
+											<div id="clickright2" class="click" onclick="clickleft()"><img src="images/left.png" /></div>
+											<div class="click"></div>
+											<div id="clickleft2" class="click" onclick="clickright()"><img src="images/right.png" /></div>
+											<div class="clear"></div>
+
+											<div class="click"></div>
+											<div id="clickleft2" class="click" onclick="clickbottom()"><img src="images/bottom.png" /></div>
+											<div class="click"></div>
+											<div class="clear"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<div class="clear"></div>
+					</div>
+				</div>
+				<footer class="fixed-bottom">
+					<div class="footer-copyright text-center py-3">© <span id="year"></span> Copyright:
+						ydbweb.com
+					</div>
+				</footer>
+		</div>
+	<script src="tetris.js"></script>
+	<script>init_tetris()</script>
+	<script>set_date_init_tetris()</script>
+</body>
+</html>

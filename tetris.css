@@ -1,0 +1,339 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  padding:0;
+  margin:0;
+}
+
+.content-wrap {
+  padding-bottom: 50px;   /* Footer height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align:center;
+  background-color: #7f98ad;
+  color:white;
+  text-align:center;
+}
+
+.row1{
+    background-color:#7f98ad;
+    margin:0;padding:0;
+    text-align:center;
+    height:100px;
+}
+
+.row1 .angular{
+    color:white;
+    text-decoration:none;
+    font-size:28px;
+}
+
+#tetrisbod{
+	width:660px;
+    min-height:700px;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+#tetris{
+    float:left;
+    width:69%;
+}
+
+#right{
+		display:block;
+    float:left;
+    border:1px solid black;
+    width:25%;
+}
+
+
+.clicks{
+		position: relative;
+		margin: 0 auto;
+    width:134px;
+    height:134px;
+}
+
+#prev{
+    position: relative;
+    margin: 0 auto;
+    width:134px;
+    height:130px;
+}
+
+#gameover{
+	float:left;
+	margin-left:10px;
+	width:100%;
+  height:40px;
+  color:red;
+}
+
+#lines{
+	float:left;
+	margin-left:10px;
+}
+
+#speed1{
+	float:left;
+	margin-left:10px;
+}
+
+.lines1{
+	width:100%;
+  height:20px;
+  font-weight:bold;
+  color:grey;
+}
+
+.speed1{
+	width:100%;
+  height:20px;
+  font-weight:bold;
+  color:darkgreen;
+}
+
+.button{
+	margin-left:5px;
+    font-weight:bold;
+    color:white;
+    background-color:lightskyblue;
+}
+
+
+
+
+.tetris_block{
+
+	float:left;
+	width:45px;
+	height:45px;
+	border:1px solid black;
+
+}
+
+.tetris_blockprev_color{
+
+	float:left;
+	width:30px;
+	height:30px;
+	border:1px solid black;
+
+}
+
+.tetris_blockprev{
+
+	float:left;
+	width:30px;
+	height:30px;
+	border:1px solid black;
+
+}
+
+.green1{
+	background-color: green;
+}
+
+.yellow1{
+	background-color: yellow;
+}
+
+.black1{
+	background-color: black;
+}
+
+.white1{
+	background-color: white;
+}
+
+.clear{
+	clear:both;
+	line-height:0;
+}
+
+.click{
+	float:left;
+	width:41px;
+	height:41px;
+	text-align:center;
+	vertical-align: middle;
+
+}
+
+.click img{
+	width:41px;
+	height:41px;
+  cursor:pointer;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#clicksmobile{
+	display:none;
+}
+
+#top{
+	display:none;
+}
+#topleft{
+	float:left;
+}
+
+#topright{
+	float:left;
+}
+
+@media only screen and (max-width: 768px) {
+	.tetris_block{
+		width:28px;
+		height:28px;
+	}
+
+	.tetris_blockprev_color{
+		width:15px;
+		height:15px;
+	}
+
+	.tetris_blockprev{
+		width:15px;
+		height:15px;
+	}
+
+	#clicksmobile{
+			display:block;
+			margin-top:15px;
+	}
+
+	#prev2{
+		float:left;
+		width:26%;
+	}
+
+	.clicks{
+		float:left;
+	}
+
+	.click img{
+		width:41px;
+		height:41px;
+	}
+
+	.click{
+		width:41px;
+		height:41px;
+	}
+
+	#lines{
+		margin-left:0px;
+	}
+
+	#speed1{
+		margin-left:0px;
+	}
+
+	.lines1{
+		width:100%;
+	  height:20px;
+	  font-weight:bold;
+	  color:grey;
+	}
+
+	.speed1{
+		width:100%;
+	  height:20px;
+	  font-weight:bold;
+	  color:darkgreen;
+	}
+
+	#right{
+		display:none;
+	}
+
+	#top{
+		display:block;
+	}
+
+	#gameover2{
+		float:left;
+		margin-left:10px;
+		width:100%;
+	  height:40px;
+	  color:red;
+	}
+
+	.button{
+		height:35px;
+	}
+
+
+	#tetrisbod{
+
+			margin: 0 auto;
+		  width:300px;
+	    min-height:300px;
+	    margin-top:5px;
+	}
+
+	#tetris{
+	    width:280px;
+			min-height:370px;
+			margin-right:0;
+
+	}
+
+}
