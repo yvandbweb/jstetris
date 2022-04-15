@@ -690,6 +690,13 @@ function clickbottom(){
 }
 
 
+function set_date_init_tetris(){
+  const d = new Date();
+  let year = d.getFullYear();
+  document.getElementById("year").innerHTML=year;
+}
+
+
 
 /*
 function clickleft(event){
