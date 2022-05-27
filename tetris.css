@@ -45,13 +45,11 @@ table {
 
 .page-container {
   position: relative;
-  min-height: 100vh;
   padding:0;
   margin:0;
 }
 
 .content-wrap {
-  padding-bottom: 50px;   /* Footer height */
 }
 
 footer {
@@ -66,10 +64,10 @@ footer {
 }
 
 .row1{
-    background-color:#7f98ad;
+    background-color:#9eb4cf;
     margin:0;padding:0;
     text-align:center;
-    height:100px;
+    height:35px;
 }
 
 .row1 .angular{
